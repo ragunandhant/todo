@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+
+.outer{
+    display: flex;
+    flex: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.inner-left {
+    padding-left: 10px;
+    align-self: stretch;
+    width: 330px;
+    height: 700px;
+    opacity: 1;
+    background-color: rgb(244, 244, 244);
+    border-radius: 16px;
+    border: 0px;
+ 
+}
+
+
+.inner-right{
+    border-radius:24px;
+    border: 1px solid red;
+     box-shadow:  2px 2px 1px gray ;
+
+    aspect-ratio: 2/3;
+    margin-left: 10px;
+    width:26cm;
+    height: 23cm;
+
+}
+h3{
+    font-size: larger;
+    font-family: Poppins;
+}
+input{
+    align-items: center;
+    border: 0px;
+    border-radius: 6px;
+    padding: 2px 0px 10px ;
+    width: 6cm;
+    padding-top: 2px;
+
+}
+.inner-left input[type='text']::placeholder {
+    line-height: normal; 
+    padding-top: 2px;/* You can adjust this value as needed */
+  }
+
+.subtask{
+    margin: 2px;
+    background-color: darkgray;
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+}
+
+span{
+    background-color: white;
+    width: 0.5cm;
+    height: 0.5cm;
+    border-radius: 24px;
+    text-align: center;
+    
+}
+button{
+    background-color: inherit;
+    font-family: Poppins;
+    width: 3cm;
+    text-align: start;
+    text-decoration: none;
+    border: none;
+
+}
+
+h1{
+    font-family: Poppins;
+    font-size: 50px;
+}
+
+.outerbox{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.today_outer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    height: 3cm;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+.today_outer button{
+    font-family: Poppins;
+    width: 3cm;
+    height: 1.5cm;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: gainsboro;
+    font-weight: 600;
+    margin: 7px;
+
+}
+
+.sticky{
+        display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding-left: 10px;
+}
+
+.sticky-title{
+    font-family: Poppins;
+}
+
+.sticky-box{
+    min-height: 5cm;
+    min-width: 5cm;
+}
+
+.delete-button {
+ margin-left: 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+.addSticky{
+    background-color: gray;
+    border-radius: 30px;
+    width: 3cm;
+    height: 3cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.addSticky button{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: whitesmoke;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.sticky-form {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 70%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  .form-input {
+    height: 30px;
+  }
+  
+  .form-textarea {
+    height: 100px;
+  }
+  .submit{
+    background-color: blue; color: white; border-radius: 5px;
+  }
+
+
+
+  .form-container {
+    min-width: 600px;
+    
+    margin: 0 auto;
+  }
+
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* todo.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal input[type="text"],
+.modal textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.modal textarea{
+  width: 10cm;
+  height: 7cm;
+}
+
+.modal input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal input[type="submit"]:hover {
+  background-color: #45a049;
+}

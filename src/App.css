@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+.outer{
+  display: flex;
+  justify-content: space-between;
+}
+.Inner-left{
+  width: 59%;
+  height: 50%;
+}
+.Inner-left img{
+  border-radius: 24px;
+  height: 100%;
+  width: 100%;
+}
+.Inner-right{
+  margin-left: 15px;
+  background-color: aliceblue;
+  border-radius: 24px;
+  display:  inline-flex ;
+  align-items: center;
+  justify-content: center;
+}
+.inner{
+  font-family: Poppins;
+  text-align: center;
+  text-transform: uppercase;
+  perspective: 500px;
+}
+.inner button{
+  background-color: yellow;
+  border-radius: 24px;
+  border: 2px whitesmoke solid;
+  height: 1cm;
+  width: 5cm;
+  font-size: 30px;
+  font-weight: 500;
+  transform: rotateY(45deg); /* Apply a 3D transform to the child element */
+  transition: transform 0.5s;
+}
+.inner button:hover{
+  background-color: orange;
+  transform: rotateY(0)
+}
